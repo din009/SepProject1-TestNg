@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sep Project1">
+  <test thread-count="5" name="Order with guest">
+  <parameter name="test" value="true"></parameter>
+  <parameter name="test1" value="Testing"></parameter>
+<!--   <groups>
+  <run>
+ <include name="Smoke"></include>
+ <exclude name="Smoke"></exclude>
+  </run>
+  </groups> -->
+    <classes>
+      <class name="com.testing.TestClass"/>
+
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Order with existing account">
+    <classes>
+      <class name="com.testing.TestClass1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
